@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo{
+    text-align:center;
+    color: black;
+}
+
+.header{
+    margin-top: 2em;
+    border-top: 5px solid white;
+    padding: 1.5em;
+    border-top: 5px solid lightseagreen;
+    border-radius: 15px;
+    background:beige ;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    float: inline-start;
+    text-align: center;
+}
+
+.nav{
+    margin-top: 2em;
+    padding: 1em;
+    border-top: 5px solid whitesmoke;
+    color: black;
+    list-style-type: none;
+    box-sizing: content-box;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    position: static;
+}
+
+.uno, .dos, .tres, .cuatro{
+    width: 1em;
+    padding: 4em;
+    margin: 0.5em;
+    border-top: 5px solid lightseagreen;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    background-color: beige;
+    box-sizing: content-box;
+    text-align:center;
+    list-style-type: none;
+    border-radius: 15px;
+}
+
+.uno, .tres{
+    text-align: left;
+    margin-left: 0.5em;
+    justify-content: center;
+    float: left;
+}
+
+.dos, .cuatro{
+    text-align: right;
+    margin-right: 0.5em;
+    justify-content: center;
+    float: right;
+}
+
+.cita{
+    font-family: Arial, Helvetica, sans-serif;
+    color:lightskyblue ;
+}
+
+.aside{
+    display: flex;
+    float: right;
+    border-right: 100%;
+}
+
+.img{
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    position:inherit, static;
+    justify-content:space-around;
+}
+
+.footer{
+    margin-top: 4em;
+    border-top: 5px solid lightseagreen;
+    padding: 1.5em;
+    position: fixed, static;
+    bottom: 0;
+    background: beige;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.data{
+    background:bisque;
+    padding: 3em;
+    width: auto;
+    margin: auto;
+    color: black;
+    border-radius: 15px;
+    list-style-type: none;
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px){
+    body{
+        background: beige;
+        color: black;
+        position: static;
+    }
+
+    .header{
+        flex-wrap: wrap;
+    }
+
+    .uno, .dos, .tres, .cuatro{
+        width: 60%;
+    }
+
+    .nav li{
+        flex-direction:row;
+        text-align: center;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px){
+    body{
+        background: beige;
+        color: black;
+    }
+
+    .header{
+        flex-wrap: wrap;
+    }
+
+    .uno, .dos, .tres, .cuatro{
+        width: 100%;
+    }
+
+    .nav li{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px){ 
+    body{
+        background: beige;
+        color: black;
+    }
+
+    .header{
+        flex-wrap: wrap;
+    }
+
+    .uno, .dos, .tres, .cuatro{
+        width: 100%;
+    }
+
+    .nav li{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px){
+    body{
+        background: beige;
+        color: black;
+    }
+
+    .header{
+        flex-wrap: wrap;
+    }
+
+    .uno, .dos, .tres, .cuatro{
+        width: 100%;
+    }
+
+    .nav li{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px){ 
+    body{
+        background: beige;
+        color: black;
+    }
+
+    .header{
+        flex-wrap: wrap;
+    }
+
+    .uno, .dos, .tres, .cuatro{
+        width: 100%;
+    }
+
+    .nav li{
+        flex-direction: column;
+        text-align: center;
+}
+}
